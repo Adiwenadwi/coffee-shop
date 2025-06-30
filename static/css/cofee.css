@@ -1,0 +1,26 @@
+#hero{
+    background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?_gl=1*tqntap*_ga*MTE3MDg5MDk1NS4xNzQ5NDc2Njg5*_ga_8JE65Q40S6*czE3NTEyODQ4ODYkbzgkZzEkdDE3NTEyODQ5MjQkajIyJGwwJGgw');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    /* rata kiri */
+    justify-content: flex-start; 
+    padding-left: 3rem;
+    color: white;
+
+    
+} 
+
+#hero h1{
+    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.7);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+

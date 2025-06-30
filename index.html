@@ -3,20 +3,24 @@
 <head data-bs-theme="dark">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shop</title>
+    <title>Klunthing Coffee</title>
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/cofee.css">
 </head>
 <body>
-    <div class="card">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Coffe Shop</a>
+    <!-- Navbar -->
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Klunthing</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -30,38 +34,99 @@
                     </ul>
                     
                 </div>
-                <form class="d-flex">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+               
             </div>
         </nav>
-        <div class="card-body h-100">
-            web content
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-        </div>
-        <div class="card-footer text-muted text-center">2025 Coffee Shop by Adiwenadwi</div>
-    </div>
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-white">
+            <div class="container">
+                <h1 class="display-4">Welcome to Klunthing Coffee</h1>
+                <h2 class="lead">Simple Happiness</h2>
+                <a href="#menu" class="btn btn-primary btn-lg">See Our Menu</a>
+            </div> 
+        </section>
+
+        <!-- About Section -->
+         <section id="about" class="py-5">
+            <div class="container text-center">
+                <h2>About Us</h2>
+                <p class="lead">Klunthing adalah coffee shop yang ramah di kantong namun tetap mengedepankan kualitas. Kami hanya menggunakan 100% kopi arabika yang berasal dari biji kopi premium pilihan. Setiap cangkir yang kami sajikan dibuat dengan sepenuh hati untuk memberikan pengalaman ngopi terbaik bagi siapa saja. Datang dan rasakan kenikmatan kopi premium dengan harga bersahabat hanya di Klunthing Coffee.</p>
+            </div>
+         </section>
+
+         <!-- Menu Section -->
+         <section id="menu" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Menu</h2>
+                <div class="row g-4">
+
+                    <!-- Menu1 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="menu_esmeralda.jpg" class="card-img-top" alt="americano">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Americano</h5>
+                                <p class="card-text">IDR 15.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu2 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="kopi1.jpg" class="card-img-top" alt="hazelnut-Latte">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Hazelnut Latte</h5>
+                                <p class="card-text">IDR 15.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu3 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="kopi2.jpg" class="card-img-top" alt="coffee-Latte">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Coffee Latte</h5>
+                                <p class="card-text">IDR 15.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         </section>
+         
+         <!-- Contact Section -->
+          <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form onsubmit="handlesubmit(event)">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea type="text" class="form-control" row="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 Klunthing Coffee. All rights reserved.
+    </footer>
+       
+     <script src="static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
