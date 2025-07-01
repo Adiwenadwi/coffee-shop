@@ -1,13 +1,13 @@
 #hero{
     background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?_gl=1*tqntap*_ga*MTE3MDg5MDk1NS4xNzQ5NDc2Njg5*_ga_8JE65Q40S6*czE3NTEyODQ4ODYkbzgkZzEkdDE3NTEyODQ5MjQkajIyJGwwJGgw');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-
+    min-height: 100vh;
+background-size: cover;
+background-position: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     /* rata kiri */
-    justify-content: flex-start; 
+    justify-content: center; 
     padding-left: 3rem;
     color: white;
 
@@ -28,7 +28,7 @@ section{
     padding-top: 100px;
 }
 
-@keyframes slideInLeft{
+/* @keyframes slideInLeft{ */
     from{
         transform: translateX(-100%);
     }
@@ -36,8 +36,8 @@ section{
         opacity: 1;
         transform: translateX(0);
     }
-}
+/* } */
 
-.animate-slide-in{
+/* .animate-slide-in{ */
     animation: slideInLeft 2.5s ease forwards;
-}
+/* } */

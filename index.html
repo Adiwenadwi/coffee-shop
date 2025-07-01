@@ -6,7 +6,7 @@
     <title>Klunthing Coffee</title>
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/cofee.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/aos/aos.css">
 
 </head>
 <body>
@@ -43,55 +43,55 @@
         <!-- Hero Section -->
         <section id="hero" class="text-white">
             <div class="container">
-                <h1 class="display-4" data-aos="fade-right">Welcome to Klunthing Coffee</h1>
-                <h2 class="lead" data-aos="fade-right" data-aos-delay="200">Simple Happiness</h2>
-                <a href="#menu" class="btn btn-primary btn-lg" data-aos="fade-right" data-aos-delay="400">See Our Menu</a>
+                <h1 class="display-4" data-aos="fade-right" data-aos-duration="2000">Welcome to Klunthing Coffee</h1>
+                <h2 class="lead" data-aos="fade-right" data-aos-delay="700" data-aos-duration="2000">Simple Happiness</h2>
+                <a href="#menu" class="btn btn-primary btn-lg" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="2000">See Our Menu</a>
             </div> 
         </section>
 
         <!-- About Section -->
          <section id="about" class="py-5">
             <div class="container text-center">
-                <h2>About Us</h2>
-                <p class="lead">Klunthing adalah coffee shop yang ramah di kantong namun tetap mengedepankan kualitas. Kami hanya menggunakan 100% kopi arabika yang berasal dari biji kopi premium pilihan. Setiap cangkir yang kami sajikan dibuat dengan sepenuh hati untuk memberikan pengalaman ngopi terbaik bagi siapa saja. Datang dan rasakan kenikmatan kopi premium dengan harga bersahabat hanya di Klunthing Coffee.</p>
+                <h2 data-aos="fade-up" data-aos-duration="2000">About Us</h2>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">Klunthing adalah coffee shop yang ramah di kantong namun tetap mengedepankan kualitas. Kami hanya menggunakan 100% kopi arabika yang berasal dari biji kopi premium pilihan. Setiap cangkir yang kami sajikan dibuat dengan sepenuh hati untuk memberikan pengalaman ngopi terbaik bagi siapa saja. Datang dan rasakan kenikmatan kopi premium dengan harga bersahabat hanya di Klunthing Coffee.</p>
             </div>
          </section>
 
          <!-- Menu Section -->
          <section id="menu" class="py-5 bg-light">
             <div class="container">
-                <h2 class="text-center mb-4">Our Menu</h2>
+                <h2 class="text-center mb-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">Our Menu</h2>
                 <div class="row g-4">
 
                     <!-- Menu1 -->
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">
                             <img src="menu_esmeralda.jpg" class="card-img-top" alt="americano">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Americano</h5>
-                                <p class="card-text">IDR 15.000</p>
+                                <h5 class="card-title" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">Americano</h5>
+                                <p class="card-text"data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">IDR 15.000</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Menu2 -->
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">
                             <img src="kopi1.jpg" class="card-img-top" alt="hazelnut-Latte">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Hazelnut Latte</h5>
-                                <p class="card-text">IDR 15.000</p>
+                                <h5 class="card-title" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">Hazelnut Latte</h5>
+                                <p class="card-text"data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">IDR 15.000</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Menu3 -->
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">
                             <img src="kopi2.jpg" class="card-img-top" alt="coffee-Latte">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Coffee Latte</h5>
-                                <p class="card-text">IDR 15.000</p>
+                                <h5 class="card-title" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">Coffee Latte</h5>
+                                <p class="card-text"data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">IDR 15.000</p>
                             </div>
                         </div>
                     </div>
@@ -103,33 +103,49 @@
          <!-- Promo of the month -->
           <section id="promo" class="py-5">
             <div class="container text-center">
-                <h2 class="mb-4">Promo of the Month</h2>
-                <p class="lead">lorem ipsum</p>
+                <h2 class="mb-4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">Promo of the Month</h2>
+                <p class="lead" data-aos="fade-left" data-aos-delay="600" data-aos-duration="2000">lorem ipsum</p>
             </div>
           </section>
 
-         <!-- Contact Section -->
+         <!-- Contact Section & Location-->
           <section id="contact" class="bg-light py-5">
             <div class="container">
-                <h2 class="text-center mb-4">Contact Us</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <form onsubmit="handlesubmit(event)">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your Email" required>
-                            </div>
-                            <div class="mb-3">
-                                <textarea type="text" class="form-control" row="4" placeholder="Your Message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-dark w-100" onsubmit="handlesubmit(event)">Send Message</button>
-                            <div>
-                                <a href="https://www.instagram.com/kopiklunting/" class="btn w-100 text-center justify-content-center py-3" target="_blank">follow us @kopiklunting</a>
-                            </div>
-                        </form>
+                <div class="row justify-content-center gap-lg-5">
+                    
+                    
+                    <!-- FORM -->
+                    <div class="col-md-4 mb-5" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="600">
+                            <h2 class="text-center mb-4">Contact Us</h2>
+                            <form onsubmit="handlesubmit(event)">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea type="text" class="form-control" row="4" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-dark w-100" onsubmit="handlesubmit(event)">Send Message</button>
+                                
+                            </form>
                     </div>
+                    
+
+                    <!-- Location  -->
+                    <div class="col-md-4 mb-5" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">
+                        <h5 class="text-decoration-underline">Our Location</h5>
+                        <p>Villa kopo krajan desa cikopo kec bungursari Kab Purwakarta</p>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1154.4624766313084!2d107.48190436232774!3d-6.427797165644826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696d648c6147db%3A0x9be29e8f70d1ac2e!2sVilla%20Kopo%20Krajan!5e0!3m2!1sen!2sid!4v1751368606738!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                  </div>
+                </div>
+
+                <!-- Link Instagram -->
+                <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                    <a href="https://www.instagram.com/kopiklunting/" class="btn w-100 text-center justify-content-center py-3" target="_blank">follow us @kopiklunting</a>
                 </div>
             </div>
           </section>
@@ -140,16 +156,6 @@
         <div class="container">
             <div>
                 
-             
-
-                 <!-- Location -->
-                  <div class="col-md-4 mb-5 offset-4">
-                    <h5 class="text-decoration-underline">Our Location</h5>
-                    <p>Villa kopo krajan desa cikopo kec bungursari Kab Purwakarta</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1154.4624766313084!2d107.48190436232774!3d-6.427797165644826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696d648c6147db%3A0x9be29e8f70d1ac2e!2sVilla%20Kopo%20Krajan!5e0!3m2!1sen!2sid!4v1751368606738!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                  </div>
 
                   <!-- WA Contact -->
                   <div class="col-md-12 mb-5">
@@ -167,7 +173,18 @@
     </footer>
        
      <script src="static/bootstrap/js/bootstrap.min.js"></script>
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="static/aos/aos.js"></script>
      <script src="script.js"></script>
+     <script>
+     AOS.init({
+        once: false
+     });
+     window.addEventListener('scroll', function(){
+        AOS.refreshHard();
+     });
+
+     
+
+     </script>
 </body>
 </html>
