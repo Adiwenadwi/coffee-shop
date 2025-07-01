@@ -6,10 +6,12 @@
     <title>Klunthing Coffee</title>
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/cofee.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- Navbar -->
-    
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="#">Klunthing</a>
@@ -41,9 +43,9 @@
         <!-- Hero Section -->
         <section id="hero" class="text-white">
             <div class="container">
-                <h1 class="display-4">Welcome to Klunthing Coffee</h1>
-                <h2 class="lead">Simple Happiness</h2>
-                <a href="#menu" class="btn btn-primary btn-lg">See Our Menu</a>
+                <h1 class="display-4" data-aos="fade-right">Welcome to Klunthing Coffee</h1>
+                <h2 class="lead" data-aos="fade-right" data-aos-delay="200">Simple Happiness</h2>
+                <a href="#menu" class="btn btn-primary btn-lg" data-aos="fade-right" data-aos-delay="400">See Our Menu</a>
             </div> 
         </section>
 
@@ -122,7 +124,7 @@
                             <div class="mb-3">
                                 <textarea type="text" class="form-control" row="4" placeholder="Your Message" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-dark w-100">Send Message</button>
+                            <button type="submit" class="btn btn-dark w-100" onsubmit="handlesubmit(event)">Send Message</button>
                             <div>
                                 <a href="https://www.instagram.com/kopiklunting/" class="btn w-100 text-center justify-content-center py-3" target="_blank">follow us @kopiklunting</a>
                             </div>
@@ -134,10 +136,38 @@
 
 
 
-    <footer class="bg-dark text-white text-center py-3">
-        &copy; 2025 Klunthing Coffee. All rights reserved.
+    <footer class="bg-dark text-white text-center pt-4 pb-2">
+        <div class="container">
+            <div>
+                
+             
+
+                 <!-- Location -->
+                  <div class="col-md-4 mb-5 offset-4">
+                    <h5 class="text-decoration-underline">Our Location</h5>
+                    <p>Villa kopo krajan desa cikopo kec bungursari Kab Purwakarta</p>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1154.4624766313084!2d107.48190436232774!3d-6.427797165644826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696d648c6147db%3A0x9be29e8f70d1ac2e!2sVilla%20Kopo%20Krajan!5e0!3m2!1sen!2sid!4v1751368606738!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+
+                  <!-- WA Contact -->
+                  <div class="col-md-12 mb-5">
+                    <h6 class="py-2 text-center">0812-3456-789 Whatsapp Only</h6>
+                  </div>
+
+                     <!-- Brand & Copyright -->
+                 <div class="col-md-12 mb-5">
+                    <p>&copy; 2023 Klunthing Coffee. All rights reserved.</p>                  
+                 </div>
+
+            </div>
+        
+        </div>
     </footer>
        
      <script src="static/bootstrap/js/bootstrap.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="script.js"></script>
 </body>
 </html>
